@@ -1,0 +1,15 @@
+﻿<Window x:Class="BudgetPlanner.SavingQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetPlanner"
+        mc:Ignorable="d"
+        Title="SavingQuestion" Height="450" Width="800">
+    <Grid>
+        <Label Content="Would you like to add a budget for savings?" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="Yes" Content="Yes" HorizontalAlignment="Left" Margin="328,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.095,0.528" Width="48" Click="Yes_Click"/>
+        <Button x:Name="No" Content="No" HorizontalAlignment="Left" Margin="440,197,0,0" VerticalAlignment="Top" Width="47" Click="No_Click_1"/>
+
+    </Grid>
+</Window>

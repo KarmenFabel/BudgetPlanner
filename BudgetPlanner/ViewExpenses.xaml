@@ -1,0 +1,15 @@
+﻿<Window x:Class="BudgetPlanner.ViewExpenses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetPlanner"
+        mc:Ignorable="d"
+        Title="ViewExpenses" Height="450" Width="800">
+    <Grid>
+        <Label Content="Would you like to view all your expenses?" HorizontalAlignment="Left" Margin="162,68,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="Yes" Content="Yes" HorizontalAlignment="Left" Margin="279,169,0,0" VerticalAlignment="Top" Width="60" Click="Yes_Click"/>
+        <Button x:Name="NO" Content="No" HorizontalAlignment="Left" Margin="454,169,0,0" VerticalAlignment="Top" Width="61" Click="NO_Click"/>
+
+    </Grid>
+</Window>

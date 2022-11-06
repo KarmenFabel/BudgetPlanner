@@ -1,0 +1,24 @@
+﻿<Window x:Class="BudgetPlanner.Savings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetPlanner"
+        mc:Ignorable="d"
+        Title="Savings" Height="450" Width="800">
+    <Grid>
+        <Label Content="How much money would you like to save?" HorizontalAlignment="Left" Margin="130,115,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="SavingAmount" HorizontalAlignment="Left" Margin="440,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="23" TextChanged="SavingAmount_TextChanged"/>
+        <Label Content="What is the interest amount of your savings?" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Center" FontSize="14"/>
+        <TextBox x:Name="Interest" HorizontalAlignment="Left" Margin="440,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="23" TextChanged="Interest_TextChanged"/>
+        <Label Content="How long are you willing to save up for?" HorizontalAlignment="Left" Margin="130,159,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Time" HorizontalAlignment="Left" Margin="440,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="23" TextChanged="Time_TextChanged"/>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="301,255,0,0" VerticalAlignment="Top" Click="Calculate_Click"/>
+        <ListBox x:Name="SavingsOutp" Margin="398,255,177,66" SelectionChanged="AllEx_SelectionChanged" AutomationProperties.IsOffscreenBehavior="Onscreen">
+            <ListBoxItem IsSelected="True" Background="White" FontSize="20" Height="10" AutomationProperties.IsOffscreenBehavior="Onscreen"/>
+        </ListBox>
+        <Label Content="Savings calculation" HorizontalAlignment="Left" Margin="265,39,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="* enter this in years" HorizontalAlignment="Left" Margin="148,185,0,0" VerticalAlignment="Top" Foreground="#FFF50D0D"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="BudgetPlanner.BuyorRent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetPlanner"
+        mc:Ignorable="d"
+        Title="BuyorRent" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="BuyOrRentLabel" Content="Would you like to buy or rent a property?" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="50"/>
+        <Button x:Name="Rent1" Content="Rent" HorizontalAlignment="Left" Margin="439,163,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click_1"/>
+        <Button x:Name="BuyButton" Content="Buy" HorizontalAlignment="Left" Margin="244,163,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click"/>
+
+    </Grid>
+</Window>
